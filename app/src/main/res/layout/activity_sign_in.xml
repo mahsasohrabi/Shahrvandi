@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:layout_weight=".3"
+                android:src="@drawable/ic_arrow_up" />
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_weight="9.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="9sp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="ثبت نام" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/backSignInColor"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نام کاربری" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:padding="12dp"
+                        android:textAlignment="gravity"
+                        android:gravity="right|center"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/bg_edit_login"
+                        android:id="@+id/edit_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="0017684923"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGray"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="وضعیت" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:padding="12dp"
+                        android:textAlignment="gravity"
+                        android:gravity="right|center"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/bg_edit_login"
+                        android:id="@+id/edit_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="همیار "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGray"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شماره تماس" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:padding="12dp"
+                        android:textAlignment="gravity"
+                        android:gravity="right|center"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/bg_edit_login"
+                        android:id="@+id/edit_tell"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="0917697123"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGray"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="کدملی" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:padding="12dp"
+                        android:textAlignment="gravity"
+                        android:gravity="right|center"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/bg_edit_login"
+                        android:id="@+id/edit_national_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="0917697123"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGray"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:paddingRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="آدرس ایمیل" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_marginBottom="12dp"
+                        android:padding="12dp"
+                        android:textAlignment="gravity"
+                        android:gravity="right|center"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/bg_edit_login"
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="lorem_ipsum@blabla.com"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorDarkGray"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_btn_presentation"
+                android:id="@+id/btn_sing_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ثبـت"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/medium"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

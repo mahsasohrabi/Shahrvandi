@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PrimitiveActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="4dp"
+        android:id="@+id/tablayout"
+        android:layout_gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_presentation"
+        android:id="@+id/btn_sing_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singIn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_blank_btn"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/questionForSignIn"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium"/>
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_blank_btn"
+        android:id="@+id/btn_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود مهمان"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="@dimen/medium"/>
+
+</LinearLayout>

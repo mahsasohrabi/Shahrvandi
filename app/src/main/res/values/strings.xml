@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shahrvandi</string>
+    <string name="title_activity_maps">Transport</string>
+    <string name="questionForSignIn">قبلا ثبت نام کرده اید؟</string>
+    <string name="singIn">ثبت نام</string>
+    <string name="test_text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</string>
+    <string name="title_activity_location">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_my_maps">Map</string>
+</resources>
